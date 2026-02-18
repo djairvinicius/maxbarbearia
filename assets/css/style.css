@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: auto;
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* espaço para navbar fixa */
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff4d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 0px 20px;  
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+/* Navbar full-width fixes */
+#navbar-container {
+    width: 100%;
+}
+
+.navbar .titlenavbar {
+    color: #000000;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Main content alignment and responsive map */
+.main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 16px;
+}
+
+.paragraph {
+    color: #111;
+    line-height: 1.6;
+    text-align: left;
+    max-width: 900px;
+    margin-bottom: 16px;
+}
+.map {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 0;
+    border-radius: 12px;
+}
