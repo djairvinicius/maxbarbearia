@@ -1,83 +1,145 @@
+/* Reseta todos os estilos padrão do navegador */
 * {
+    /* Remove espaçamento interno */
     padding: 0;
+    /* Remove margem externa */
     margin: 0;
+    /* Define o modelo de caixa para incluir bordas e preenchimento */
     box-sizing: border-box;
 }
 
+/* Estilos do corpo da página */
 body {
+    /* Altura automática conforme o conteúdo */
     height: auto;
+    /* Largura total 100% */
     width: 100%;
+    /* Cor de fundo branca */
     background-color: #ffffff;
+    /* Usa flexbox para layout */
     display: flex;
+    /* Alinha itens em coluna (vertical) */
     flex-direction: column;
+    /* Centraliza itens horizontalmente */
     align-items: center;
-    padding-top: 60px; /* espaço para navbar fixa */
+    /* Adiciona espaço superior para a barra de navegação fixa */
+    padding-top: 60px;
 }
 
+/* Estilos da barra de navegação */
 .navbar {
+    /* Altura da barra */
     height: 60px;
+    /* Largura total 100% */
     width: 100%;
+    /* Cor de fundo branca com transparência */
     background-color: #ffffff4d;
+    /* Usa flexbox para layout */
     display: flex;
+    /* Centraliza itens verticalmente */
     align-items: center;
+    /* Distribui espaço entre itens */
     justify-content: space-between;
+    /* Espaçamento interno horizontal */
     padding: 0px 20px 0px 20px;  
+    /* Fixa a barra no topo */
     position: fixed;
+    /* Posição no topo da tela */
     top: 0;
+    /* Define a ordem de sobreposição */
     z-index: 100;
+    /* Efeito de desfoque no fundo */
     backdrop-filter: blur(8px);
+    /* Compatibilidade com navegadores Webkit */
     -webkit-backdrop-filter: blur(8px);
 }
-/* Navbar full-width fixes */
+
+/* Corrige largura total da barra de navegação */
 #navbar-container {
+    /* Largura total 100% */
     width: 100%;
 }
 
+/* Estilos do título da barra de navegação */
 .navbar .titlenavbar {
+    /* Cor do texto preta */
     color: #000000;
+    /* Remove margem */
     margin: 0;
 }
 
+/* Estilos da lista de navegação */
 .navbar ul {
+    /* Remove ponto de lista padrão */
     list-style: none;
+    /* Usa flexbox para layout */
     display: flex;
+    /* Espaçamento entre itens */
     gap: 1rem;
+    /* Remove margem */
     margin: 0;
+    /* Remove preenchimento */
     padding: 0;
 }
 
+/* Estilos dos links da barra de navegação */
 .navbar a {
+    /* Cor do texto preta */
     color: #000000;
+    /* Remove sublinhado dos links */
     text-decoration: none;
 }
 
+/* Estilos da seção superior (topo) */
 .top {
+    /* Largura total 100% */
     width: 100%;
+    /* Usa flexbox para layout */
     display: flex;
+    /* Centraliza itens verticalmente */
     align-items: center;
+    /* Centraliza itens horizontalmente */
     justify-content: center;
+    /* Espaço superior */
     padding-top: 20px;
 }
 
-/* Main content alignment and responsive map */
+/* Estilos do conteúdo principal e mapa responsivo */
 .main {
+    /* Largura total 100% */
     width: 100%;
+    /* Largura máxima para layout centrado */
     max-width: 1100px;
+    /* Margem automática para centralizar */
     margin: 20px auto;
+    /* Espaçamento interno horizontal */
     padding: 0 16px;
 }
 
+/* Estilos do parágrafo */
 .paragraph {
+    /* Cor do texto cinza escuro */
     color: #111;
+    /* Altura de linha para melhor legibilidade */
     line-height: 1.6;
+    /* Alinha texto à esquerda */
     text-align: left;
+    /* Largura máxima para melhor leitura */
     max-width: 900px;
+    /* Espaço inferior */
     margin-bottom: 16px;
 }
+
+/* Estilos do mapa */
 .map {
+    /* Largura total 100% */
     width: 100%;
+    /* Largura máxima para o mapa */
     max-width: 600px;
+    /* Altura automática conforme aspecto */
     height: auto;
+    /* Remove bordas */
     border: 0;
+    /* Bordas arredondadas */
     border-radius: 12px;
 }
